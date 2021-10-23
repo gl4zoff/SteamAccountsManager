@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Threading;
+using Microsoft.Win32;
 using System.Windows;
-using WindowsInput;
 using System.Windows.Media;
+using System.Diagnostics;
 
 namespace SteamAccountsManager
 {
@@ -61,21 +61,15 @@ namespace SteamAccountsManager
             ErorText.Text = "";
             if (selectedAccount != null)
             {
-                BringWindowToTop(FindWindow(null, "Вход в Steam"));
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.TextEntry(selectedAccount.Login);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.TAB);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.TextEntry(selectedAccount.Password);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.TAB);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.SPACE);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.TAB);
-                Thread.Sleep(40);
-                new InputSimulator().Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.SPACE);
+                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Valve\Steam");
+                string steamPATH = key.GetValue("SteamExe").ToString();
+                Process[] proc = Process.GetProcesses();
+                foreach (Process process in proc)
+                    if (process.ProcessName == "steam")
+                    {
+                        process.Kill();
+                    }
+                Process.Start(steamPATH, $"-login {selectedAccount.Login} {selectedAccount.Password}");
             }
             else
                 ErorText.Text = "Выберите аккаунт";

@@ -12,7 +12,6 @@ C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Re
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.Text.Json.dll
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.Threading.Tasks.Extensions.dll
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.ValueTuple.dll
-C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\WindowsInput.dll
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\MaterialDesignColors.pdb
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\MaterialDesignThemes.Wpf.pdb
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\MaterialDesignThemes.Wpf.xml
@@ -25,7 +24,6 @@ C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Re
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.Text.Json.xml
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.Threading.Tasks.Extensions.xml
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\System.ValueTuple.xml
-C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\bin\x86\Release\WindowsInput.xml
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\obj\x86\Release\SteamAccountsManager.csproj.AssemblyReference.cache
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\obj\x86\Release\MainWindow.g.cs
 C:\Users\egorg\source\repos\SteamAccountsManager\SteamAccountsManager\obj\x86\Release\App.g.cs
